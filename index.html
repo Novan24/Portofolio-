@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta charset="UTF-8">
+    <title>Novan's portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="navbar">  
+      <img src="Logo.png" style="height: 20px; padding: 10px 0 0 10px;">
+      <a href="#home"></a>
+    
+  <div class="dropdown">
+      <button class="dropbtn"><h4>Home <i class="fa fa-caret-down">
+      </i></h4></button>
+      <div class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Pricing</a>
+      </div>
+      </div>
+  </div>
+</header>
+<hr>
+
+  <section style="height: auto; margin: 90px 0 50px 0;">
+    <main class="container1">
+    <section class="box1">
+      <div class="mL">
+        <div class="cl">
+          <h1 class="hi">Hi!, I'm Novan</h1>
+          <h2 class="big">Graphic designer based on Indonesia</h2>
+          <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+        </div>
+      </div>
+      <div class="mR">
+        <div class="phone">
+          <div class="bezel">
+            <div class="screen">
+              <div class="stat-bar">
+                <div class="stat">
+                <div id="clock"></div>
+                <div class="island"></div>
+                <div class="icon">
+                  <i class="fa-solid fa-signal"></i>
+                  <i class="fa-solid fa-wifi"></i>
+                  <i class="fa-solid fa-battery-half"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="item-container">
+                <div class="item">
+                <h4>LOGO</h4>
+                <div class="r-logo">
+                  <img class="logimg" id="image1" alt="1">
+                  <img class="logimg" id="image2" alt="2">
+                  <img class="logimg" id="image3" alt="3">
+                </div>
+                <div class="bl2">
+                  <h4 style="text-align: left; width: 100%; line-height: 0;">POSTER •</h4>
+                  <div class="poster">
+                    <img style="width:100%" id="banner" src="" alt="Banner"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="box2">
+      <h2 class="sc">Powered by:</h2>
+      <div class="app">
+        <img class="apk" src="Pixellab.png" alt="pixellab">
+        <img class="apk" src="Snapseed.png" alt="snapseed">
+        <a href="photopea.com">
+          <img class="apk" src="Photopea.png" alt="photopea">
+        </a>
+        <img class="apk" src="Color_pallete.png" alt="colorpallete">
+      </div>
+    </section>
+    <p class="a">0 0 0 0</p>
+    <aside class="block-container">
+      <button class="box3">
+        <h1><span>2</span> YEARS</h1>
+        <h3>OF EXPERIENCE</h3>
+      </button>
+      <p class="s">0 0 0</p>
+      <button class="box4">
+        <h4>LET'S GET IN</h4>
+        <h1>TOUCH!</h1>
+      </button>
+    </aside>
+  </main>
+  </section>
+  
+ <section>
+   
+ </section> 
+<footer>
+    <div class="container">
+        <div class="left">
+            <div style="display:flex; align-items: flex-start; height: 35px;">
+                <img src="Logo.png" style="height: 35px; margin-right: 13px;">
+                <h1 id="logo">GRAPH</h1>
+            </div>    
+            <ul>
+                <li><a href="">About</a></li>
+                <li>|</li>
+                <li><a href="">Pricing</a></li>
+                <li>|</li>
+                <li><a href="">Contact</a></li>
+            </ul>     
+            <br>
+            <div class="br"></div>
+            <div class="info">
+                <div class="L">
+                    <h6>Location</h6>
+                    <h6 class="medium">Probolinggo, East Java, Indonesia</h6>
+                </div>
+                <div class="R">
+                    <h6>Web version 1.0.0.0</h6>
+                    <h6 class="medium" style="width:90px; margin-left: 10px;">
+                        Last updated: October 9, 2024
+                    </h6>
+                </div>
+            </div>
+            <p class="small-text">
+                ©Graph Design <span id="year"></span> All Rights Reserved
+            </p>
+        </div>
+        
+        <div class="right">
+            <div style="display: grid; padding-right: 20px;">
+                <section>
+                    <p class="connect-text">Connect</p>
+                </section>
+                <section>
+                    <div class="icon-container">
+                        <a href="https://mail.google.com/" target="_blank" title="Gmail"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://dribbble.com/" target="_blank" title="Dribbble"><i class="fab fa-dribbble"></i></a>
+                        <a href="https://www.threads.net/" target="_blank" title="Threads"><i class="fa-brands fa-threads"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.whatsapp.com/" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    // section 1
+      function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const currentTime = `${hours}:${minutes}`;
+        document.getElementById('clock').textContent = currentTime;
+    }
+
+    // Update jam setiap detik
+    setInterval(updateClock, 1000);
+
+    // Panggil fungsi satu kali untuk menampilkan jam saat halaman dimuat
+    updateClock();
+    
+  // Img randomizer
+    const totalImages = 13;
+    const usedIndexes = new Set();
+
+    function getRandomImage() {
+        let randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * totalImages) + 1;
+        } while (usedIndexes.has(randomIndex));
+        usedIndexes.add(randomIndex);
+
+        const formattedIndex = String(randomIndex).padStart(2, '0');
+        return `Img${formattedIndex}.png`;
+    }
+
+    document.getElementById('image1').src = getRandomImage();
+    document.getElementById('image2').src = getRandomImage();
+    document.getElementById('image3').src = getRandomImage();
+
+   // banner randomizer
+   const totalBanners = 6; // Jumlah banner B01.png hingga B06.png
+
+    function getRandomBanner() {
+        const randomIndex = Math.floor(Math.random() * totalBanners) + 1;
+        const formattedIndex = String(randomIndex).padStart(2, '0');
+        return `B${formattedIndex}.png`;
+    }
+
+    // Pasang gambar acak ke elemen img
+    document.getElementById('banner').src = getRandomBanner();
+</script>
+
+<style></style>
+</body>
+</html>
