@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+  <meta charset="UTF-8">
+  <title>J udul halaman</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <img style="width: 100%;"src="main.jp" alt="">
+    <main class="container">
+    <section class="box1">
+      <div class="mL">
+     <div class="cl">
+     <h1 class="hi">Hi!, I'm Novan</h1>
+     <h2 class="big">Graphic designer based on Indonesia</h2>
+     <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+     </div>
+      </div>      
+      <div class="mR">
+          <div class="phone"><div class="bezel">
+    <div class="screen">     
+      <div class="stat-bar">
+        <div id="clock"> </div>
+        <div class="island"></div>        
+        <div class="icon">
+          <i class="fa-solid fa-signal"></i>
+          <i class="fa-solid fa-wifi"></i>
+          <i class="fa-solid fa-battery-half"></i>
+        </div>
+        </div>
+      <div class="item-container">
+      <h4>LOGO</h4>
+      <div class="r-logo">
+        <img class="logimg" id="image1" alt="1">
+        <img class="logimg" id="image2" alt="2">
+        <img class="logimg" id="image3" alt="3">
+      </div>   
+      <div class="bl2">
+        <h4 style="text-align: left; width: 100%; line-height: 0;">
+          POSTER •</h4>
+        <div class="poster">
+          <img style="width:100%" id="banner" src="" alt="Banner">
+        </div></div></div></div></div></div>
+      </div>
+    </section>
+    
+    <section class="box2">
+      <h2>Powered by:</h2>
+      <div class="app">
+        <img class="apk" src="img/logo/Img01.png" alt="1">
+        <img class="apk" src="img/logo/Img01.png" alt="2">
+        <img class="apk" src="img/logo/Img01.png" alt="3">
+        <img class="apk" src="img/logo/Img01.png" alt="4">
+      </div>
+    </section>
+    <p class="a">0 0 0 0</p>
+    <aside class="block-container">
+      <button class="box3">
+        <h1><span>2</span> YEARS</h1>
+        <h3>OF EXPERIENCE</h3>
+      </button>
+      <p class="s">0 0 0</p>
+      <button href="#" class="box4">
+        <h4>LET'S GET IN</h4>
+        <h1>TOUCH!</h1>
+      </button>
+    </aside>
+  </main>
+</body>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    line-break: 30px;
+    background: #EFEFEF;
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 6vw;
+  }
+  .box1 {
+    display: flex;
+    height: 385px;
+    width: 100%;
+    border-radius: 20px;
+    background: #363C44;
+    flex: 1 2 100%;
+    overflow: hidden;
+  }
+  .mL {
+    height: 100%;
+    padding: 30px 0 0 50px;
+    color: white;
+    flex: 1 4 60%;
+  }
+  .cl {
+    width: 90%;
+  }
+  .hi {
+    font-size: 1.5em;
+    margin: 15px 0;
+    width: auto;
+    height: 10px;
+  }
+  .big {
+    font-size: 3.8em;
+    margin: 0.1em 0;
+  }
+  .p {
+    font-weight: 550;
+    width: 400px;
+    font-size: 1.4em;
+    margin: 0.5em 0;
+  }
+  .mR {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    flex: 1 1 45%;
+  }
+  @media(max-width: 880px) {
+  .a {
+    display: none;
+  }   }
+   
+  @media(max-width: 600px) {
+    .box1 {
+        height: 770px;
+        flex-direction: column;
+    }
+    .mL {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 500px;
+    }
+    .mR {
+      height: 400px;
+      width: 100%;
+    }
+    .p {
+      width: auto;
+    }
+    .box2 {
+      background: gray;
+    }
+    .phone {
+      width: 100%;
+    }
+    .box3, .box4 {
+    margin: -50px 0;
+  }
+ }
+  
+/* Tablet sized */
+@media (max-width: 950px), and (min-width: 600px) {
+  .mL, .mR{
+    flex: 1 1 50%;
+  }
+  .box1 {
+    height: 500px;
+  }
+  .cl {
+    width: 20vw;
+  }
+  .phone {
+    max-width: 300px;
+  }
+  .p {
+    width: 300px;
+  }
+  .a {
+    width: 10vw;
+  }
+}
+@media (max-width: 600px), and (min-width: 950px) {
+  .mL, .mR{
+    flex: 1 1 100%;
+  }
+  .box1 {
+    height: 770px;
+  }
+  .mR {
+    justify-content: center;
+  }
+  .cl {
+    width: 85%;
+  }
+  .p {
+    width: auto;
+  }
+  .a {
+    display: none;
+  }
+}
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100px;
+    width: 100%;
+    flex-shrink: 1;
+    flex-grow: 2;
+    flex-basis: 260px;
+  }
+  .a {
+    width: 13vw;
+    color: transparent;
+  }
+  .app {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    background: #CECFD3;
+    justify-content: space-around;
+  }
+  .apk {
+    width: 50px;
+    margin: 12px 0 9px 0;
+  }  
+  .block-container {
+    width: 400px;
+    height: 100%;
+    flex-shrink: 2;
+    flex-grow: 1;
+    flex-basis: 400px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .box3 h1 {
+    font-weight: 900; font-size: 2.5em;
+  }
+  .box3 span{
+    font-size: 1.25em;;
+  }
+  .box3 h3{
+    font-weight: 900; letter-spacing: 0.1em; font-size: 1.1em;
+  }
+
+  .box3 {
+    height: 100px;
+    width: 45%;
+    background: #222831;
+    line-height: 0.5em;
+    color: white;
+    font-family: Raleway;
+    border-radius: 15px;
+    border: 0 solid transparent;
+  }
+  .s {
+    color: transparent;
+  }
+  .box4 {
+    height: 100px;
+    width: 55%;
+    font-family: Raleway;
+    line-height: 0.1em;
+    color: #222831;
+    font-size: 18px;
+    background: #FD700C;
+    border: 0 solid transparent;
+    border-radius: 15px;
+    transition: 0.5s;
+  }
+  .box4 h4 {
+    font-weight: 900; letter-spacing: 0.15em; /* lets get in */
+  }
+  .box4 h1 {
+    font-weight: 900; font-size: 2.2em; 
+  }
+  .box4:hover {
+    box-shadow: 0 10px 10px 2px grey;
+  }
+
+  .box2, .block-container {
+    margin: 40px 0;
+  }
+   @media(max-width: 460px) {
+    .block-container {
+      flex-direction: column;
+    }
+    .box3 {
+      width: 100%;
+    }
+    .box4 {
+      width: 100%;
+      margin-top: 10px;
+      transition: 0s;
+    }
+    .s {
+      display: none;
+    }
+    .ml {
+      padding: 0;
+    }
+  }
+  
+  /* phone */
+.screen, .icon {
+  display: flex;
+}
+.phone {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: auto;
+  height: 350px;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.bezel { 
+  margin-top: 5px;
+  height: 400px;
+  width: 295px;
+  border: 13px solid #222831;
+  background: #efefef;
+  border-radius: 47.33px;
+}
+.screen {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8px 15px;
+}
+
+/* status bar */
+.stat-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: auto;
+  width: 100%;
+}
+#clock {
+  font-size: 15px;
+  height: 20px;
+  font-weight: 600;
+  flex: 2;
+}
+.island {
+  width: 110px;
+  height: 32px;
+  border-radius: 50px;
+  background: #222831;
+  flex: 1;
+  flex-basis: 75px;
+}
+.icon {
+  width: auto;
+  font-size: 1em;
+  flex: 2;
+  justify-content: flex-end;
+}
+.icon i{
+  margin: 2.5px;
+}
+/* main container */
+
+.item-container {
+  display: flex;
+  margin-left: 6px;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 95%;
+}
+.r-logo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: -15px;
+}
+.logimg {
+  width: 44px;
+}
+.bl2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 15px;
+  padding: 0 13px;
+  height: 400px;
+  background: #FD700C;
+  color: white;
+  width: 90%;
+}
+.poster {
+  background: white;
+  width: 100%;
+  height: 400px;
+}
+.logimg:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+</style>
+<script>
+  function updateClock() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const currentTime = `${hours}:${minutes}`;
+        document.getElementById('clock').textContent = currentTime;
+    }
+
+    // Update jam setiap detik
+    setInterval(updateClock, 1000);
+
+    // Panggil fungsi satu kali untuk menampilkan jam saat halaman dimuat
+    updateClock();
+    
+  // Img randomizer
+    const totalImages = 13;
+    const usedIndexes = new Set();
+
+    function getRandomImage() {
+        let randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * totalImages) + 1;
+        } while (usedIndexes.has(randomIndex));
+        usedIndexes.add(randomIndex);
+
+        const formattedIndex = String(randomIndex).padStart(2, '0');
+        return `img/logo/Img${formattedIndex}.png`;
+    }
+
+    document.getElementById('image1').src = getRandomImage();
+    document.getElementById('image2').src = getRandomImage();
+    document.getElementById('image3').src = getRandomImage();
+
+   // banner randomizer
+   const totalBanners = 6; // Jumlah banner B01.png hingga B06.png
+
+    function getRandomBanner() {
+        const randomIndex = Math.floor(Math.random() * totalBanners) + 1;
+        const formattedIndex = String(randomIndex).padStart(2, '0');
+        return `img/banner/B${formattedIndex}.png`;
+    }
+
+    // Pasang gambar acak ke elemen img
+    document.getElementById('banner').src = getRandomBanner();
+</script>
+</html>
