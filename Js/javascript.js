@@ -44,3 +44,23 @@
 
     // Pasang gambar acak ke elemen img
     document.getElementById('banner').src = getRandomBanner();
+    
+    // SecAnim
+      // Function to detect when elements are in view
+  function handleScrollAnimation() {
+    const sections = document.querySelectorAll('.SecAnim');
+    const windowHeight = window.innerHeight;
+    
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      
+      // Add 'in-view' class if the element is in the viewport
+      if (sectionTop < windowHeight - 50) {
+        section.classList.add('in-view');
+      }
+    });
+  }
+
+  // Trigger the function on page load and scroll
+  window.addEventListener('scroll', handleScrollAnimation);
+  window.addEventListener('load', handleScrollAnimation);

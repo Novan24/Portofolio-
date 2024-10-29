@@ -15,6 +15,24 @@ body {
 .body-container{
   display: block;
 }
+/* scroll animation */
+  .containe {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  /* Section styling */
+  .SecAnim {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  /* Section appears when in view */
+  .SecAnim.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 /* section 1 */
   .container1{
@@ -23,7 +41,6 @@ body {
     margin: 0 6vw 0 6vw;
     
   }
-  
   .box1 {
     display: flex;
     height: 385px;
